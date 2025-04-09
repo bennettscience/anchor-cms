@@ -39,21 +39,6 @@ function uri_to($uri)
 }
 
 /**
- * Debugging function, simply a var_dump wrapper
- *
- * @example dd($something, $another);
- *
- * @param mixed[] ...,
- */
-function dd()
-{
-    echo '<pre>';
-    call_user_func_array('var_dump', func_get_args());
-    echo '</pre>';
-    exit;
-}
-
-/**
  * Generates a random string
  *
  * @param int $size (optional) desired random string length

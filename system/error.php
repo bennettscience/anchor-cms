@@ -33,7 +33,7 @@ class error
      *
      * @throws \ErrorException
      */
-    public static function native($code, $message, $file, $line, $context)
+    public static function native($code, $message, $file, $line)
     {
         if ($code & error_reporting()) {
             static::exception(new ErrorException($message, $code, 0, $file, $line));
