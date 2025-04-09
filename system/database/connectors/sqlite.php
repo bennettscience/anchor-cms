@@ -52,6 +52,7 @@ class sqlite extends Connector
     {
         /** @var string $database */
         extract($config);
+        print_r($config);
 
         $dns       = 'sqlite:' . $database;
         $this->pdo = new PDO($dns);
