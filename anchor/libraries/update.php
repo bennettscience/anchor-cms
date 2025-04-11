@@ -13,7 +13,7 @@ class update
     /**
      * Holds the AnchorCMS update check URL
      */
-    const UPDATE_URL = 'https://anchorcms.com/version';
+    const UPDATE_URL = 'https://raw.githubusercontent.com/bennettscience/anchor-cms/refs/heads/master/version';
 
     /**
      * Checks the Anchor version
