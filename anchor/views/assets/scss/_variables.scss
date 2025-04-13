@@ -3,11 +3,11 @@
  */
 
 // colors
-@import "colors";
+@use "colors";
 
 // page
-$page-background: $color-athens-gray;
-$page-color: $color-slate-gray;
+$page-background: colors.$color-athens-gray;
+$page-color: colors.$color-slate-gray;
 
 // borders
 $border-radius: 5px;
@@ -35,15 +35,15 @@ $transition-speed-base: 0.25s;
 $transition-speed-slow: 0.4s;
 
 // buttons
-$button-background: $color-green;
-$button-background-hover: $color-green-accent;
-$button-color: $color-white;
+$button-background: colors.$color-green;
+$button-background-hover: colors.$color-green-accent;
+$button-color: colors.$color-white;
 
-$button-secondary-background: $color-gull-gray;
-$button-secondary-background-hover: $color-regent-gray;
+$button-secondary-background: colors.$color-gull-gray;
+$button-secondary-background-hover: colors.$color-regent-gray;
 
 // links
-$link-color: $color-kashmir-blue;
+$link-color: colors.$color-kashmir-blue;
 $link-decoration: none;
 $link-transition-speed: $transition-speed-base;
 

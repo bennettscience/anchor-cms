@@ -1,27 +1,33 @@
-@import "variables";
+@use "variables";
+@use "colors";
 
-.top, .meta, .buttons {
-  transition: opacity $transition-speed-slow;
-  opacity:    1;
+.top,
+.meta,
+.buttons {
+  transition: opacity variables.$transition-speed-slow;
+  opacity: 1;
 }
 
 .header {
-  transition: background $transition-speed-slow;
+  transition: background variables.$transition-speed-slow;
 }
 
 .focus {
-  .top, .meta, .buttons {
-    opacity:        0;
+
+  .top,
+  .meta,
+  .buttons {
+    opacity: 0;
     pointer-events: none;
   }
 
   .meta {
-    height:   0;
+    height: 0;
     overflow: hidden;
   }
 
   .header,
   .main textarea {
-    background: $color-athens-gray;
+    background: colors.$color-athens-gray;
   }
 }

@@ -1,11 +1,13 @@
+@use "sass:map";
+@use "sass:math";
 $breakpoint-defaults: (
-                          'default media': all,
-                          'default feature': min-width,
-                          'default font size': 16px
-                      );
+  'default media': all,
+  'default feature': min-width,
+  'default font size': 16px
+);
 
-@function em($pixels, $context: map-get($breakpoint-defaults, 'default font size')) {
-  @return #{$pixels/$context}em;
+@function em($pixels, $context: map.get($breakpoint-defaults, 'default font size')) {
+  @return calc($pixels/$context)em;
 }
 
 ///
@@ -15,14 +17,12 @@ $breakpoint-defaults: (
 /// @param $feature [min-width] - breakpoint feature
 /// @param $medium  [all]       - media type
 ///
-@mixin breakpoint(
-  $measure,
-  $feature: map-get($breakpoint-defaults, 'default feature'),
-  $medium: map-get($breakpoint-defaults, 'default media')
-) {
+@mixin breakpoint($measure,
+  $feature: map.get($breakpoint-defaults, 'default feature'),
+  $medium: map.get($breakpoint-defaults, 'default media')) {
   $value: $measure;
 
-  @if (unit($measure) == 'px') {
+  @if (math.unit($measure)=='px') {
     $value: em($measure);
   }
 

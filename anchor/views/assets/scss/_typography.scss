@@ -1,12 +1,13 @@
-@import "variables";
+@use "variables";
+@use "colors";
 
 * {
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  font:  #{$font-size-base}/#{$line-height-base} $font-family-base;
-  color: $page-color;
+  font: calc(variables.$font-size-base/variables.$line-height-base), variables.$font-family-base;
+  color: variables.$page-color;
 }
 
 b,
@@ -19,24 +20,24 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  color:           $link-color;
-  text-decoration: $link-decoration;
-  transition:      all $link-transition-speed;
+  color: variables.$link-color;
+  text-decoration: variables.$link-decoration;
+  transition: all variables.$link-transition-speed;
 }
 
 ::selection {
-  background: $color-shuttle-gray;
-  color:      $color-white;
+  background: colors.$color-shuttle-gray;
+  color: colors.$color-white;
 }
 
 ::-webkit-input-placeholder {
-  color: $color-heather;
+  color: colors.$color-heather;
 }
 
 ::-moz-placeholder {
-  color: $color-heather;
+  color: colors.$color-heather;
 }
 
 ::placeholder {
-  color: $color-heather;
+  color: colors.$color-heather;
 }

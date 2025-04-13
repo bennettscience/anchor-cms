@@ -1,4 +1,5 @@
-@import "variables";
+@use "variables";
+@use "colors";
 
 /*
 	Login
@@ -8,7 +9,7 @@ body.login {
   top:         25%;
   left:        50%;
   margin-left: -150px;
-  background:  $color-river-bed;
+  background:  colors.$color-river-bed;
 
   .wrap,
   .content {
@@ -20,7 +21,7 @@ body.login {
     font-size:      25px;
     line-height:    60px;
     font-weight:    lighter;
-    color:          $color-white;
+    color:          colors.$color-white;
   }
 
   label {
@@ -44,29 +45,29 @@ body.login {
   .buttons {
     a {
       float:       right;
-      font-size:   $font-size-base;
+      font-size:   variables.$font-size-base;
       line-height: 38px;
-      font-weight: $font-weight-bold;
+      font-weight: variables.$font-weight-bold;
     }
 
     button {
       float: left;
 
       a {
-        color: $color-regent-gray;
+        color: colors.$color-regent-gray;
 
         &:hover {
-          color: $color-white;
+          color: colors.$color-white;
         }
       }
     }
   }
 
   button {
-    background:  $color-oxford-blue;
-    color:       $color-gull-gray;
-    font-size:   $font-size-base;
-    font-weight: $font-weight-bold;
+    background:  colors.$color-oxford-blue;
+    color:       colors.$color-gull-gray;
+    font-size:   variables.$font-size-base;
+    font-weight: variables.$font-weight-bold;
   }
 
   .notification {

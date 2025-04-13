@@ -1,21 +1,22 @@
-@import "../../variables";
+@use "../../variables";
+@use "../../_colors";
 
 .redirect {
-  height:     0;
-  background: $color-alabaster;
-  opacity:    0;
+  height: 0;
+  background: colors.$color-alabaster;
+  opacity: 0;
   transition: all 0.3s;
 
   &.show {
-    top:     0;
-    height:  37px;
+    top: 0;
+    height: 37px;
     opacity: 0.99;
   }
 
   input {
-    width:      100%;
-    padding:    10px 0;
-    color:      $color-gull-gray;
+    width: 100%;
+    padding: 10px 0;
+    color: colors.$color-gull-gray;
     background: none;
   }
 }

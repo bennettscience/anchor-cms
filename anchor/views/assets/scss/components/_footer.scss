@@ -1,17 +1,18 @@
-@import "../variables";
+@use "../variables";
+@use "../colors";
 
 .bottom {
   padding: 40px 0 30px;
 
   small {
-    float:     left;
-    font-size: $font-size-small;
+    float: left;
+    font-size: variables.$font-size-small;
   }
 
   em {
-    float:      right;
-    font-size:  $font-size-small;
+    float: right;
+    font-size: variables.$font-size-small;
     font-style: normal;
-    color:      $color-gray-chateau;
+    color: colors.$color-gray-chateau;
   }
 }

@@ -1,16 +1,17 @@
-@import "../variables";
+@use "../variables";
+@use "../colors";
 
 .paging {
-  clear:       both;
-  text-align:  center;
+  clear: both;
+  text-align: center;
   padding-top: 25px;
 
   a,
   strong {
-    display:       inline-block;
-    padding:       0.2em 1em;
-    background:    $color-white;
+    display: inline-block;
+    padding: 0.2em 1em;
+    background: colors.$color-white;
     border-radius: 5px;
-    color:         $color-slate-gray;
+    color: colors.$color-slate-gray;
   }
 }

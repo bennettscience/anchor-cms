@@ -149,7 +149,7 @@ template {
   -webkit-font-smoothing: antialiased
 }
 body {
-  font: 15px/25px "Helvetica Neue","Open Sans","DejaVu Sans",Arial,sans-serif;
+  font: .6,"Helvetica Neue","Open Sans","DejaVu Sans",Arial,sans-serif;
   color: #6a788d
 }
 b,
@@ -185,7 +185,7 @@ body,
 html {
   width: 100%
 }
-@media all and (min-width:61.3125em) {
+@media all and (min-width:61.3125 em) {
   body,
   html {
     width: initial
@@ -194,7 +194,7 @@ html {
 .wrap {
   width: 90%
 }
-@media all and (min-width:61.3125em) {
+@media all and (min-width:61.3125 em) {
   .wrap {
     width: initial
   }
@@ -674,7 +674,7 @@ select + .arrow {
   float: none;
   overflow: hidden
 }
-@media all and (min-width:61.3125em) {
+@media all and (min-width:61.3125 em) {
   .top nav {
     float: left
   }
@@ -711,7 +711,7 @@ select + .arrow {
   background: #38414f;
   color: #6a788d
 }
-@media all and (min-width:61.3125em) {
+@media all and (min-width:61.3125 em) {
   .top .btn {
     display: initial
   }
@@ -730,7 +730,7 @@ select + .arrow {
   width: inherit;
   margin-right: 0
 }
-@media all and (min-width:61.3125em) {
+@media all and (min-width:61.3125 em) {
   .list li {
     width: auto
   }
@@ -774,7 +774,7 @@ select + .arrow {
   display: none;
   margin-bottom: 10px
 }
-@media all and (min-width:61.3125em) {
+@media all and (min-width:61.3125 em) {
   .list li p {
     display: block
   }
@@ -782,34 +782,34 @@ select + .arrow {
 .list li .status {
   margin-left: 10px
 }
-.notifications .error,
-.notifications .notice,
-.notifications .success {
+variables.notifications .error,
+variables.notifications .notice,
+variables.notifications .success {
   padding: 10px 18px;
   line-height: 21px;
   font-size: 15px;
   font-weight: 600
 }
-.notifications .notice {
+variables.notifications .notice {
   color: #fff;
   background: #578cd9
 }
-.notifications .error {
+variables.notifications .error {
   color: #fff;
   background: #d34937
 }
-.notifications .success {
+variables.notifications .success {
   color: #fff;
   background: #6aad28
 }
-.header .notifications {
+.header variables.notifications {
   position: absolute;
   left: 55%;
   top: 82px;
   width: 320px;
   z-index: 1200
 }
-.header .notifications div::after {
+.header variables.notifications div::after {
   content: "";
   position: absolute;
   top: -6px;
@@ -819,10 +819,10 @@ select + .arrow {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent
 }
-.header .notifications .error::after {
+.header variables.notifications .error::after {
   border-bottom-color: #d34937
 }
-.header .page .notifications {
+.header .page variables.notifications {
   left: 48%
 }
 .paging {
@@ -852,7 +852,7 @@ hgroup h1 {
   font-weight: 300;
   color: #99a3b1
 }
-@media all and (min-width:61.3125em) {
+@media all and (min-width:61.3125 em) {
   hgroup h1 {
     float: left;
     line-height: 120px;
@@ -863,7 +863,7 @@ hgroup nav {
   float: none;
   line-height: 80px
 }
-@media all and (min-width:61.3125em) {
+@media all and (min-width:61.3125 em) {
   hgroup nav {
     float: right;
     line-height: 120px

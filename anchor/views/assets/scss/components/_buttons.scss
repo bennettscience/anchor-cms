@@ -1,58 +1,59 @@
-@import "../variables";
+@use "../variables";
+@use "../colors";
 
 .btn {
-  display:       inline-block;
-  padding:       0 22px;
-  border:        none;
-  border-radius: $border-radius;
-  font-size:     $font-size-small;
-  line-height:   38px;
-  font-weight:   bold;
-  color:         $button-color;
-  background:    $button-background;
+  display: inline-block;
+  padding: 0 22px;
+  border: none;
+  border-radius: variables.$border-radius;
+  font-size: variables.$font-size-small;
+  line-height: 38px;
+  font-weight: bold;
+  color: variables.$button-color;
+  background: variables.$button-background;
 
   /* span.btn */
-  cursor:        pointer;
+  cursor: pointer;
 
   &:hover {
-    background: $button-background-hover;
+    background: variables.$button-background-hover;
   }
 
   &.secondary {
-    background: $button-secondary-background;
+    background: variables.$button-secondary-background;
 
     &:hover {
-      background: $button-secondary-background-hover;
+      background: variables.$button-secondary-background-hover;
     }
   }
 
   &.blue {
-    background: $color-blue;
+    background: colors.$color-blue;
 
     &:hover {
-      background: $color-blue-accent;
+      background: colors.$color-blue-accent;
     }
   }
 
   &.red {
-    background: $color-red;
+    background: colors.$color-red;
 
     &:hover {
-      background: $color-red-accent;
+      background: colors.$color-red-accent;
     }
   }
 
   &#exit-focus {
-    position:    fixed;
-    right:       20px;
-    top:         20px;
-    padding:     0 17px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 0 17px;
     line-height: 32px;
-    background:  $color-mischka;
-    color:       $color-slate-gray;
+    background: colors.$color-mischka;
+    color: colors.$color-slate-gray;
 
     &:hover {
-      background: $color-mischka;
+      background: colors.$color-mischka;
     }
   }
 }

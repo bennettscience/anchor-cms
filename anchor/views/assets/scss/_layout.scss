@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins/breakpoints";
+@use "variables";
+@use "mixins/breakpoints";
 
 * {
   box-sizing: border-box;
@@ -9,7 +9,7 @@ html,
 body {
   width: 100%;
 
-  @include breakpoint($breakpoint-small) {
+  @include breakpoints.breakpoint(variables.$breakpoint-small) {
     width: initial;
   }
 }
@@ -17,7 +17,7 @@ body {
 .wrap {
   width: 90%;
 
-  @include breakpoint($breakpoint-small) {
+  @include breakpoints.breakpoint(variables.$breakpoint-small) {
     width: initial;
   }
 }

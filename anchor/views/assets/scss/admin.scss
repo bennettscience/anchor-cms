@@ -8,29 +8,29 @@
  * note: the ".css" at the end is missing on purpose - that way, Sass will inline the file
  * contents instead of outputting a normal CSS import statement.
  */
-@import "../../../../node_modules/normalize.css/normalize";
+@use "../../../../node_modules/normalize.css/normalize";
 
 /**
  * Typography
  */
-@import "typography";
+@use "typography";
 
 /**
  * Layout
  */
-@import "layout";
+@use "layout";
 
 /**
  * Page header
  */
-@import "components";
+@use "components";
 
 /**
  * Focus mode
  */
-@import "focusMode";
+@use "focusMode";
 
 /**
  * Login
  */
-@import "login";
+@use "login";

@@ -1,47 +1,48 @@
-@import "../variables";
+@use "../variables";
+@use "../colors";
 
 .sidebar {
-  float:      left;
-  width:      150px;
+  float: left;
+  width: 150px;
 
-  border-top: 1px solid $color-geyser;
+  border-top: 1px solid colors.$color-geyser;
 
-  & + .main {
-    float:       right;
-    width:       760px;
+  &+.main {
+    float: right;
+    width: 760px;
     padding-top: 0;
   }
 
   a {
-    display:       block;
-    padding:       5px 20px;
-    font-size:     $font-size-base;
-    color:         $color-nevada;
-    transition:    none;
-    border-bottom: 1px solid $color-geyser;
+    display: block;
+    padding: 5px 20px;
+    font-size: variables.$font-size-base;
+    color: colors.$color-nevada;
+    transition: none;
+    border-bottom: 1px solid colors.$color-geyser;
 
     &:hover {
-      background: $color-light-solitude;
+      background: colors.$color-light-solitude;
     }
 
     &.active {
-      background: $color-white;
+      background: colors.$color-white;
     }
   }
 }
 
 .statuses {
   .icon {
-    display:      inline-block;
-    width:        16px;
-    height:       16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
     margin-right: 2px;
 
-    position:     relative;
-    top:          3px;
-    left:         -7px;
+    position: relative;
+    top: 3px;
+    left: -7px;
 
-    background:   url('../img/statuses.png');
+    background: url('../img/statuses.png');
   }
 
   a {

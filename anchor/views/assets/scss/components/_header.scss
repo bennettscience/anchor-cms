@@ -1,17 +1,18 @@
-@import "../variables";
-@import "../mixins/breakpoints";
+@use "../variables";
+@use "../mixins/breakpoints";
+@use "../colors";
 
 .top {
-  position:   relative;
-  padding:    15px 0;
-  background: $color-river-bed;
-  z-index:    21;
+  position: relative;
+  padding: 15px 0;
+  background: colors.$color-river-bed;
+  z-index: 21;
 
   a {
-    display:     inline-block;
-    padding:     0 18px;
-    font-size:   $font-size-small;
-    font-weight: $font-weight-bold;
+    display: inline-block;
+    padding: 0 18px;
+    font-size: variables.$font-size-small;
+    font-weight: variables.$font-weight-bold;
     line-height: 34px;
   }
 
@@ -19,24 +20,24 @@
     margin-right: 25px;
 
     a {
-      padding:     0;
-      background:  transparent url($icon-logo) no-repeat center center;
-      width:       24px;
-      height:      34px;
+      padding: 0;
+      background: transparent url(variables.$icon-logo) no-repeat center center;
+      width: 24px;
+      height: 34px;
       text-indent: -1000px;
     }
   }
 
   nav {
-    float:    none;
+    float: none;
     overflow: hidden;
 
-    @include breakpoint($breakpoint-small) {
+    @include breakpoints.breakpoint(variables.$breakpoint-small) {
       float: left;
     }
 
     li {
-      float:      left;
+      float: left;
       list-style: none;
 
       a {
@@ -46,41 +47,41 @@
 
     img {
       position: relative;
-      top:      4px;
+      top: 4px;
     }
 
     a {
       margin-right: 15px;
-      color:        $color-bali-hai;
+      color: colors.$color-bali-hai;
 
       &:hover {
-        color: $color-rock-blue;
+        color: colors.$color-rock-blue;
       }
     }
 
     .active a {
-      color:         $color-oxford-blue;
-      background:    $color-lynch;
-      border-radius: $border-radius;
+      color: colors.$color-oxford-blue;
+      background: colors.$color-lynch;
+      border-radius: variables.$border-radius;
     }
   }
 
   .btn {
-    display:       none;
-    float:         right;
-    padding:       0 16px;
-    margin-left:   18px;
-    border-radius: $border-radius;
-    background:    $color-bright-gray;
-    color:         $color-slate-gray;
+    display: none;
+    float: right;
+    padding: 0 16px;
+    margin-left: 18px;
+    border-radius: variables.$border-radius;
+    background: colors.$color-bright-gray;
+    color: colors.$color-slate-gray;
 
-    @include breakpoint($breakpoint-small) {
+    @include breakpoints.breakpoint(variables.$breakpoint-small) {
       display: initial;
     }
 
     &:hover {
-      color:      $color-light-regent-gray;
-      background: $color-licorice;
+      color: colors.$color-light-regent-gray;
+      background: colors.$color-licorice;
     }
   }
 }
