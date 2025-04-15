@@ -784,34 +784,34 @@ select + .arrow {
 .list li .status {
   margin-left: 10px
 }
-variables.notifications .error,
-variables.notifications .notice,
-variables.notifications .success {
+.notifications .error,
+.notifications .notice,
+.notifications .success {
   padding: 10px 18px;
   line-height: 21px;
   font-size: 15px;
   font-weight: 600
 }
-variables.notifications .notice {
+.notifications .notice {
   color: #fff;
   background: #578cd9
 }
-variables.notifications .error {
+.notifications .error {
   color: #fff;
   background: #d34937
 }
-variables.notifications .success {
+.notifications .success {
   color: #fff;
   background: #6aad28
 }
-.header variables.notifications {
+.header .notifications {
   position: absolute;
   left: 55%;
   top: 82px;
   width: 320px;
   z-index: 1200
 }
-.header variables.notifications div::after {
+.header .notifications div::after {
   content: "";
   position: absolute;
   top: -6px;
@@ -821,10 +821,10 @@ variables.notifications .success {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent
 }
-.header variables.notifications .error::after {
+.header .notifications .error::after {
   border-bottom-color: #d34937
 }
-.header .page variables.notifications {
+.header .page .notifications {
   left: 48%
 }
 .paging {
