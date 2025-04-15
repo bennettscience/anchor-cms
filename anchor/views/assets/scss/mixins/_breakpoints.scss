@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "sass:math";
+
 $breakpoint-defaults: (
   'default media': all,
   'default feature': min-width,
@@ -7,7 +8,7 @@ $breakpoint-defaults: (
 );
 
 @function em($pixels, $context: map.get($breakpoint-defaults, 'default font size')) {
-  @return calc($pixels/$context)em;
+  @return math.div($pixels, $context)+em;
 }
 
 ///
@@ -26,7 +27,7 @@ $breakpoint-defaults: (
     $value: em($measure);
   }
 
-  $queryString: "#{$medium} and (#{$feature}: #{$value})";
+  $queryString: "#{$medium} and (#{$feature}:#{$value})";
 
   @media #{$queryString} {
     @content;
