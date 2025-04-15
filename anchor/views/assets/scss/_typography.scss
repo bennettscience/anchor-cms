@@ -6,7 +6,9 @@
 }
 
 body {
-  font: calc(variables.$font-size-base/variables.$line-height-base), variables.$font-family-base;
+  font-size: variables.$font-size-base;
+  line-height: variables.$line-height-base;
+  font-family: variables.$font-family-base;
   color: variables.$page-color;
 }
 

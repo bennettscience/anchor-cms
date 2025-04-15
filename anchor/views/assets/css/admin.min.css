@@ -149,7 +149,9 @@ template {
   -webkit-font-smoothing: antialiased
 }
 body {
-  font: .6,"Helvetica Neue","Open Sans","DejaVu Sans",Arial,sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: "Helvetica Neue","Open Sans","DejaVu Sans",Arial,sans-serif;
   color: #6a788d
 }
 b,
