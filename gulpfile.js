@@ -277,3 +277,4 @@ function help(cb) {
 exports.default = help;
 exports.build = series(images, styles, scripts);
 exports.buildProd = series(styles_prod, scripts_prod);
+exports.buildCss = styles;
